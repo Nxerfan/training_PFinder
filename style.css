@@ -2,12 +2,55 @@
   padding: 0;
   margin: 0;
 }
+body {
+  background-color: black;
+}
 
 header {
-    height: 64px;
-    width: 100%;
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: row;
+  height: 64px;
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: relative;
+  .leftH {
+    display: inline-flex;
     justify-content: space-around;
+    margin: auto 0 auto 30px;
+    width: 150px;
+    height: auto;
+    img {
+      width: auto;
+      height: auto;
+    }
+    P {
+      color: #1a2a4a;
+      font-size: 18px;
+      cursor: default;
+      
+
+    }
+          &:hover{
+        opacity: 0.8;
+      }
+  }
+
+  .rightH {
+    display: inline-flex;
+    margin: auto 0 auto 30px;
+    justify-content: space-around;
+    width: 520px;
+    button{
+      border: none;
+      background-color: #ffffff;
+      font-size: 16px;
+      img{
+        margin: auto 15px auto 0;
+        width: 18px;
+      }
+      
+    }
+    
+  }
 }
